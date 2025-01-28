@@ -221,22 +221,40 @@
         <!-- end header section  -->
         <!-- start body section  -->
         <div class="body-section">
+            <!-- start angle   -->
             <div class="angel-up">
                 <a href="#"><i class="fa-solid fa-angle-up"></i> </a>
             </div>
             <div class="whatsapp-img">
                 <a href="#"><img src="assets/image/whatsapp-white.png" alt="whatsapp-img"></a>
             </div>
+            <!-- end angle   -->
             <!-- start first block  -->
-            <div class="automotive-outer">
-                <img src="assets/image/sample-1.jpg" alt="interior">
-                <div class="automotive-item-inner">
-                    <div class="text">
-                        <h2>The best</h2>
-                        <p>automotive parts</p>
-                        <a href="#" class="button">shop now</a>
+            <div class="owl-carousel owl-theme">
+                <div class="item"><h4>
+                    <div class="automotive-outer">
+                        <img src="assets/image/sample-1.jpg" alt="interior">
+                        <div class="automotive-item-inner">
+                            <div class="text">
+                                <h2>The best</h2>
+                                <p>automotive parts</p>
+                                <a href="#" class="button">shop now</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </h4></div>
+                <div class="item"><h4>
+                    <div class="automotive-outer">
+                        <img src="assets/image/sample-2.jpg" alt="interior">
+                        <div class="automotive-item-inner">
+                            <div class="text">
+                                <h2>This Week Only</h2>
+                                <p>Wheels & tires</p>
+                                <a href="#" class="button">shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                </h4></div>
             </div>
             <!-- end first block  -->
             <!-- start second block  -->
@@ -976,6 +994,31 @@
     <!-- end second block  -->
     <!-- end footer section  -->
     </div>
+
+
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    autoplay:true,
+    autoplayTimeout:4000,
+    autoplaySpeed:1500,
+    autoplayHoverPause:true,
+    dots:false,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+</script>
 </body>
 
 </html>
